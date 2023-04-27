@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/项目/HiNT/app/src/main/res/drawable-v24/bt_stop.xml" value="0.2585" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/drawable-v24/button_shape_green.xml" value="0.2585" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/drawable-v24/button_shape_orange.xml" value="0.2585" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/drawable/button_blue.xml" value="0.2585" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/drawable/button_green.xml" value="0.2585" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/drawable/button_shape.xml" value="0.2585" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_about_new_thread.xml" value="0.28541666666666665" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_book_borrow.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_book_detals.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_fragement_home.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_get_in_dialog.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_introduction.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_main.xml" value="0.286231884057971" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_map.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_my_team.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_room_apply.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_room_info.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_show_allbooks.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_show_mybook.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_sign_in_out.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_system__recruit.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_team_details.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_team_details__visitor.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_team_edit.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_team_info.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_team_out.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_web__recruit.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/activity_web_view.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/button_only.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/custom_title.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/first_menu.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/frag_my_home.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/frage_fistpage.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/fragment.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/fragment_my_apply.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/fragment_vp.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/intro_item.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/layout_mytitlte.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/menu.xml" value="0.28541666666666665" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/myspinner.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/recyclerview_sql_item.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/recyclerview_wg_item.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/register.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/register_2.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/room_list.xml" value="0.35520833333333335" />
+        <entry key="..\:/项目/HiNT/app/src/main/res/layout/spinner_item.xml" value="0.35520833333333335" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
