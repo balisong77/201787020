@@ -3,15 +3,15 @@ package com.example.hint;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.google.android.material.tabs.TabLayout;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MyTeam extends AppCompatActivity {
 
@@ -53,8 +53,8 @@ public class MyTeam extends AppCompatActivity {
 
         tabLayout.setupWithViewPager(vp);
 
-        tabLayout.getTabAt(0).setText("我的队伍");
-        tabLayout.getTabAt(1).setText("我的申请");
+        tabLayout.getTabAt(0).setText("My team");
+        tabLayout.getTabAt(1).setText("My application");
     }
 
 }

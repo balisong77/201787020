@@ -52,7 +52,7 @@ public class TeamEdit extends AppCompatActivity {
 //                db.update("Team",values_details,"game_name = ?",new String[] {intent_getOld.getStringExtra("TeamName_old")});
 //                db.update("Team",values_num,"game_name = ?",new String[] {intent_getOld.getStringExtra("TeamName_old")});
                 db.update("Team",values_name,"game_name = ?",new String[] {intent_getOld.getStringExtra("TeamName_old")});
-                Toast.makeText(TeamEdit.this,"修改成功", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TeamEdit.this,"Successfully modified", Toast.LENGTH_SHORT).show();
                 finish();
             }
         });

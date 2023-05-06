@@ -7,13 +7,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import org.litepal.LitePal;
 import org.litepal.crud.DataSupport;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -52,12 +52,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         Intent intent1=new Intent(MainActivity.this, Fragement_home.class);
                         intent1.putExtra("RealName",i.getRealName());
                         startActivity(intent1);
-                        Toast.makeText(this,"登录成功",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this,"Login success",Toast.LENGTH_SHORT).show();
                         saved(i);
                         finish();
                         break;}
                     else {
-                        Toast.makeText(this, "登录失败", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, "Login failed", Toast.LENGTH_SHORT).show();
                     }
                 }
                 break;

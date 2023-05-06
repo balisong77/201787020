@@ -8,10 +8,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.List;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.List;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.LinearViewholder> {
     private Context mcontext;
@@ -32,14 +32,14 @@ public class Adapter extends RecyclerView.Adapter<Adapter.LinearViewholder> {
         viewHolder.name.setText(book.getName());
         viewHolder.author.setText(book.getAuthor());
         viewHolder.ima.setImageResource(book.getNum());
-        viewHolder.date.setText("到期时间："+book.getTime());
+        viewHolder.date.setText("Due date: "+book.getTime());
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(mcontext,Book_detals.class);
                 intent.putExtra("extra_data",book.getName());
                 intent.putExtra("extra_num",book.getNum());
-                intent.putExtra("type","还");
+                intent.putExtra("type","return");
                 mcontext.startActivity(intent);
             }
         });

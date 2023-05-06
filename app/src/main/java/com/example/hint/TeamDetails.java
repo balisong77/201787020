@@ -41,9 +41,9 @@ public class TeamDetails extends AppCompatActivity {
 
         final Intent intent_get = getIntent();
 
-        textView.setText("比赛名称：" + intent_get.getStringExtra("TeamName"));
-        textView2.setText("招募人数：" + intent_get.getStringExtra("Team_member") + "人");
-        textView4.setText("发布人：" + intent_get.getStringExtra("TeamPublisher"));
+        textView.setText("Team name: " + intent_get.getStringExtra("TeamName"));
+        textView2.setText("Number of recruits: " + intent_get.getStringExtra("Team_member"));
+        textView4.setText("Recruiter: " + intent_get.getStringExtra("TeamPublisher"));
 
         textView3.setText(intent_get.getStringExtra("Team_details"));
 
@@ -63,10 +63,10 @@ public class TeamDetails extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder dialog = new AlertDialog.Builder(TeamDetails.this);
-                dialog.setTitle("终止招募");
-                dialog.setMessage("确定终止招募？");
+                dialog.setTitle("Terminate recruitment");
+                dialog.setMessage("Confirm to terminate");
                 dialog.setCancelable(false);
-                dialog.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                dialog.setPositiveButton("sure", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         SQLiteDatabase db = dbHelper.getWritableDatabase();
@@ -74,7 +74,7 @@ public class TeamDetails extends AppCompatActivity {
                         finish();
                     }
                 });
-            dialog.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+            dialog.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
 

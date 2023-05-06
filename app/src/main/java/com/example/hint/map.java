@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
@@ -22,10 +26,6 @@ import com.baidu.mapapi.utils.CoordinateConverter;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
 public class map extends AppCompatActivity {
 
@@ -137,14 +137,14 @@ public class map extends AppCompatActivity {
                 if (grantresults.length > 0) {
                     for (int result : grantresults) {
                         if (result != PackageManager.PERMISSION_GRANTED) {
-                            Toast.makeText(com.example.hint.map.this, "缺少权限", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(com.example.hint.map.this, "Lack of permission", Toast.LENGTH_SHORT).show();
                             finish();
                             return;
                         }
                     }
                     requestLocation();
                 } else {
-                    Toast.makeText(this, "未知错误", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Unknown error", Toast.LENGTH_SHORT).show();
                     finish();
                 }
                 break;

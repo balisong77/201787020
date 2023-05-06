@@ -36,14 +36,14 @@ public class Adapter_wg extends RecyclerView.Adapter<Adapter_wg.GridViewHolder> 
         viewHolder.textView1.setText(book.getName());
         viewHolder.textView2.setText(book.getFree());
         viewHolder.imageView.setImageResource(book.getNum());
-        if(book.getFree().equals("已借出"))
+        if(book.getFree().equals("Borrowed"))
         {
             viewHolder.textView2.setBackground(drawable);
         }
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (book.getFree().equals("可借")) {
+                if (book.getFree().equals("Borrowable")) {
                     Intent intent = new Intent(mcontext, Book_detals.class);
                     intent.putExtra("extra_data", book.getName());
                     intent.putExtra("extra_num",book.getNum());

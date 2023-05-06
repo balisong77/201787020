@@ -9,13 +9,13 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import org.litepal.crud.DataSupport;
 import org.litepal.tablemanager.Connector;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 public class Register_Change_Activity extends AppCompatActivity {
     private EditText editText1,editText2,editText4,editText5;
@@ -69,17 +69,17 @@ public class Register_Change_Activity extends AppCompatActivity {
                 information.setIdNumber(editText4.getText().toString());
                 information.setPassWord(editText5.getText().toString());
                 if(editText1.getText().toString()==null||editText2.getText().toString()==null||str_group==null||editText4.getText().toString()==null||editText5.getText().toString()==null){
-                    Toast.makeText(Register_Change_Activity.this,"信息不完整！",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Register_Change_Activity.this,"Incomplete information!",Toast.LENGTH_SHORT).show();
                 }
                 else if(editText4.getText().toString().length()!=12){
-                    Toast.makeText(Register_Change_Activity.this,"请输入正确学号",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Register_Change_Activity.this,"Please enter the correct student ID",Toast.LENGTH_SHORT).show();
                 }
                 else if(editText5.getText().toString().length()!=6){
-                    Toast.makeText(Register_Change_Activity.this,"请输入六位密码",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Register_Change_Activity.this,"Please enter a six digit password",Toast.LENGTH_SHORT).show();
                 }
                 else{
                     information.update(num);
-                    Toast.makeText(Register_Change_Activity.this,"注册成功",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Register_Change_Activity.this,"Registered successfully",Toast.LENGTH_SHORT).show();
                     Intent intent=new Intent(Register_Change_Activity.this, MainActivity.class);
                     startActivity(intent);
                     finish();

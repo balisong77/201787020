@@ -8,11 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import java.util.List;
-
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.List;
 
 public class TeamAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
@@ -119,8 +119,8 @@ public class TeamAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 }
             });
             ((ViewHolder) holder).itemView.setText(team.getTeamName());
-            ((ViewHolder) holder).itemView2.setText("发起人：" + team.getBossName());
-            ((ViewHolder) holder).itemView3.setText("招募中");
+            ((ViewHolder) holder).itemView2.setText("recruiter: " + team.getBossName());
+            ((ViewHolder) holder).itemView3.setText("recruiting");
 
         }
 

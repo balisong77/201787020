@@ -85,15 +85,15 @@ public class Fragement_home extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         AlertDialog.Builder builder=new AlertDialog.Builder(Fragement_home.this);
-        builder.setMessage("确认退出程序？");
-        builder.setTitle("提示");
-        builder.setPositiveButton("确认", new DialogInterface.OnClickListener() {
+        builder.setMessage("Sure to exit？");
+        builder.setTitle("dialog");
+        builder.setPositiveButton("confirm", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 finish();
             }
         });
-        builder.setNegativeButton("取消",null);
+        builder.setNegativeButton("cancel",null);
         builder.create().show();
     }
 }

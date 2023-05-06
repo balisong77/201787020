@@ -20,7 +20,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/bt_edit"
-        android:text="注册"
+        android:text="Register"
         android:textColor="#FFE066"
         android:textSize="30sp" />
 
@@ -51,7 +51,7 @@
         android:layout_marginEnd="40sp"
         android:layout_marginRight="40sp"
         android:layout_marginBottom="-106dp"
-        android:hint="请输入学号" />
+        android:hint="Student ID" />
 
     <EditText
         android:id="@+id/second"
@@ -63,7 +63,7 @@
         android:layout_marginLeft="-4dp"
         android:layout_marginRight="4dp"
         android:layout_marginBottom="-129dp"
-        android:hint="请输入密码"
+        android:hint="Password"
         android:inputType="numberPassword" />
 
     <Button
@@ -74,7 +74,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="-122dp"
         android:background="@drawable/button_shape_orange"
-        android:text="登录"
+        android:text="Log in"
         android:textColor="#FFFFFF"
         android:textSize="30sp" />
 

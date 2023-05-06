@@ -44,7 +44,7 @@ public class TeamOut extends AppCompatActivity {
                 //            + "memberNum integer, "
                 //            + "details text)
                 if(et_game.getText().toString().equals("") || et_mem.getText().toString().equals("") || et_details.getText().toString().equals("")){
-                    Toast.makeText(TeamOut.this,"请输入全部信息", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TeamOut.this,"Please enter all information", Toast.LENGTH_SHORT).show();
                 }else {
                     values.put("game_name",et_game.getText().toString());
                     values.put("memberNum",et_mem.getText().toString());
@@ -53,7 +53,7 @@ public class TeamOut extends AppCompatActivity {
                     db.insert("Team",null,values);
                     values.clear();
                     finish();
-                    Toast.makeText(TeamOut.this,"发布成功", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TeamOut.this,"Successfully published", Toast.LENGTH_SHORT).show();
                 }
 
 

@@ -7,10 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import java.util.List;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.List;
 
 public class RoomAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
@@ -61,8 +61,8 @@ public class RoomAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
             final Room room = mlist.get(position);
 
-            ((ViewHolder) holder).iv_roomID.setText("地点:" + room.getRoomID());
-            ((ViewHolder) holder).iv_hour.setText("预计占用" + room.getHour());
+            ((ViewHolder) holder).iv_roomID.setText("Room ID:" + room.getRoomID());
+            ((ViewHolder) holder).iv_hour.setText("Estimated occupancy time" + room.getHour());
             ((ViewHolder) holder).iv_time.setText(room.getTime());
             ((ViewHolder) holder).iv_week.setText(room.getWeek());
             ((ViewHolder) holder).iv_group.setText(room.getGroup());

@@ -33,15 +33,15 @@ public class TeamDetails_Visitor extends AppCompatActivity {
 
         final Intent intent_get = getIntent();
 
-        textView.setText("比赛名称：" + intent_get.getStringExtra("TeamName"));
-        textView2.setText("招募人数：" + intent_get.getStringExtra("Team_member") + "人");
-        textView_publisher.setText("发布人:" + intent_get.getStringExtra("TeamPublisher"));
+        textView.setText("Team name: " + intent_get.getStringExtra("TeamName"));
+        textView2.setText("Number of recruits: " + intent_get.getStringExtra("Team_member") + "人");
+        textView_publisher.setText("Recruiter: " + intent_get.getStringExtra("TeamPublisher"));
         textView3.setText(intent_get.getStringExtra("Team_details"));
 
         bt_apply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(TeamDetails_Visitor.this,"已发送申请",Toast.LENGTH_SHORT).show();
+                Toast.makeText(TeamDetails_Visitor.this,"Applied",Toast.LENGTH_SHORT).show();
             }
         });
 

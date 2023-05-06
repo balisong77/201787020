@@ -4,12 +4,12 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Show_mybook extends AppCompatActivity {
     private  SQL_helper myhelper;
@@ -20,7 +20,7 @@ public class Show_mybook extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_mybook);
         title_layout = findViewById(R.id.title_mybook);
-        title_layout.setTitleText("我的书籍");
+        title_layout.setTitleText("My book");
     }
 
     @Override
@@ -36,7 +36,7 @@ public class Show_mybook extends AppCompatActivity {
 
                 Book book = new Book(cursor.getString(cursor.getColumnIndex("name")), cursor.getString(cursor.getColumnIndex("author")), cursor.getString(cursor.getColumnIndex("free")),cursor.getInt(cursor.getColumnIndex("num")));
                 book.setTime(cursor.getString(cursor.getColumnIndex("time")));
-                if (book.getFree().equals("我已借")) {
+                if (book.getFree().equals("Borrowed by myself")) {
                     books.add(book);
                 }
 

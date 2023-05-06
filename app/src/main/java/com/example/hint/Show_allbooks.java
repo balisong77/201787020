@@ -4,12 +4,12 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Show_allbooks extends AppCompatActivity {
 
@@ -22,7 +22,7 @@ public class Show_allbooks extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_allbooks);
         title_layout = findViewById(R.id.title_allbooks);
-        title_layout.setTitleText("书籍列表");
+        title_layout.setTitleText("Book list");
     }
 
 
@@ -36,7 +36,7 @@ public class Show_allbooks extends AppCompatActivity {
         Cursor cursor =db.query("Book",null,null,null,null,null,null);
         if (cursor.moveToFirst()){
             do{
-                if(cursor.getString(cursor.getColumnIndex("free")).equals("可借")) {
+                if(cursor.getString(cursor.getColumnIndex("free")).equals("Borrowable")) {
 
                     Book book = new Book(cursor.getString(cursor.getColumnIndex("name")), cursor.getString(cursor.getColumnIndex("author")), cursor.getString(cursor.getColumnIndex("free")),cursor.getInt(cursor.getColumnIndex("num")));
                     books.add(book);
@@ -46,8 +46,8 @@ public class Show_allbooks extends AppCompatActivity {
         }
         if (cursor.moveToFirst()){
             do{
-                if(cursor.getString(cursor.getColumnIndex("free")).equals("已借")||cursor.getString(cursor.getColumnIndex("free")).equals("我已借")) {
-                    Book book = new Book(cursor.getString(cursor.getColumnIndex("name")), cursor.getString(cursor.getColumnIndex("author")),"已借出",cursor.getInt(cursor.getColumnIndex("num")));
+                if(cursor.getString(cursor.getColumnIndex("free")).equals("Borrowed")||cursor.getString(cursor.getColumnIndex("free")).equals("Borrowed by myself")) {
+                    Book book = new Book(cursor.getString(cursor.getColumnIndex("name")), cursor.getString(cursor.getColumnIndex("author")),"Borrowed",cursor.getInt(cursor.getColumnIndex("num")));
                     books.add(book);
                 }
  

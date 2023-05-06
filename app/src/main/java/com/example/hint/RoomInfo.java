@@ -8,16 +8,16 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 public class RoomInfo extends AppCompatActivity {
 
@@ -30,7 +30,7 @@ public class RoomInfo extends AppCompatActivity {
 
     Calendar getTimeNow = Calendar.getInstance();
     Date date = getTimeNow.getTime();
-    public static String[] WEEK = {"周日","周一","周二","周三","周四","周五","周六"};
+    public static String[] WEEK = {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
 
     private SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
 

@@ -12,9 +12,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.litepal.crud.DataSupport;
-
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.litepal.crud.DataSupport;
 
 public class Book_borrow extends AppCompatActivity {
     private Title_layout title_layout;
@@ -28,21 +28,21 @@ public class Book_borrow extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_borrow);
         title_layout = findViewById(R.id.title_Book_borrow);
-        title_layout.setTitleText("确认租借：");
+        title_layout.setTitleText("Confirmation");
         Login_user login_user = DataSupport.findFirst(Login_user.class);
         tx1 = findViewById(R.id.book_borrow_name);
         tx2 = findViewById(R.id.book_borrow_number);
         tx3 = findViewById(R.id.book_borrow_lender);
         Intent intent2 = getIntent();
-        tx1.setText("租借书籍："+intent2.getStringExtra("name"));
-        tx2.setText("租借人学号："+login_user.getIdNumber());
-        tx3.setText("租借人姓名："+login_user.getRealName());
+        tx1.setText("Book: "+intent2.getStringExtra("name"));
+        tx2.setText("Student ID:"+login_user.getIdNumber());
+        tx3.setText("Name: "+login_user.getRealName());
         myhelper = new SQL_helper(this,"BOOKSTORE",null,1);
         myhelper.getWritableDatabase();
         final SQLiteDatabase db = myhelper.getWritableDatabase();
         final Intent intent = getIntent();
         final String data = intent.getStringExtra("name");
-        String[] arr = {"7天","14天","一个月","两个月"};
+        String[] arr = {"7 days","14 days","1 month","2 months"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,arr);
         msp = findViewById(R.id.myspin);
         msp.setAdapter(adapter);
@@ -74,11 +74,11 @@ public class Book_borrow extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 ContentValues values = new ContentValues();
-                values.put("free", "我已借");
+                values.put("free", "Borrowed by myself");
                 Timetrans time= new Timetrans();
                 values.put("time",time.borrow_time(t));
                 db.update("Book", values, "name = ?", new String[]{data});
-                Toast.makeText(Book_borrow.this,"租借成功！",Toast.LENGTH_SHORT).show();
+                Toast.makeText(Book_borrow.this,"success!",Toast.LENGTH_SHORT).show();
                 finish();
 
             }

@@ -9,12 +9,12 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import org.litepal.tablemanager.Connector;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 public class RegisterActivity extends AppCompatActivity {
     private EditText editText1,editText2,editText4,editText5;
@@ -54,17 +54,17 @@ public class RegisterActivity extends AppCompatActivity {
                 information.setIdNumber(editText4.getText().toString());
                 information.setPassWord(editText5.getText().toString());
                 if(editText4.getText().toString().length()!=12){
-                    Toast.makeText(RegisterActivity.this,"请输入正确学号",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this,"Please enter the correct student ID",Toast.LENGTH_SHORT).show();
                 }
                 else if(editText5.getText().toString().length()<6){
-                    Toast.makeText(RegisterActivity.this,"密码不得少于六位！",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this,"Password must not be less than six digits!",Toast.LENGTH_SHORT).show();
                 }
                 else if(editText1.getText().toString().length()==0||editText2.getText().toString().length()==0||str_group.length()==0||editText4.getText().toString().length()==0||editText5.getText().toString().length()==0){
-                    Toast.makeText(RegisterActivity.this,"信息不完整！",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this,"Incomplete information!",Toast.LENGTH_SHORT).show();
                 }
                 else{
                     information.save();
-                    Toast.makeText(RegisterActivity.this,"注册成功",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this,"Registered successfully",Toast.LENGTH_SHORT).show();
                     Intent intent=new Intent(RegisterActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
