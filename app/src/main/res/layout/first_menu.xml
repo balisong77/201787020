@@ -95,7 +95,6 @@
         android:layout_height="82dp"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
         android:background="@mipmap/plus2" />
 

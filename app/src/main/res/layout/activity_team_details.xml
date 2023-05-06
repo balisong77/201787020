@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="175dp"
         android:layout_marginBottom="4dp"
-        android:text="队伍信息"
+        android:text="Team Info"
         android:textColor="#ffffff"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
@@ -71,7 +71,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="10dp"
         android:textStyle="bold"
-        android:text="详细招募信息"
+        android:text="Detail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menber_details" />
 
@@ -93,7 +93,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/bt_edit"
-        android:text="编辑信息"
+        android:text="Edit"
         android:textColor="#ffcc22"
 
         android:textSize="18sp"
@@ -109,7 +109,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/bt_stop"
-        android:text="终止招募"
+        android:text="Terminate"
         android:textColor="#ffffff"
 
         android:textSize="18sp"

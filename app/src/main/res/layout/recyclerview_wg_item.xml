@@ -26,7 +26,7 @@
             android:id="@+id/allbook_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="书名"
+            android:text="Book Title"
             android:textSize="10dp"
             app:layout_constraintEnd_toEndOf="@+id/ima_allbook"
             app:layout_constraintStart_toStartOf="@+id/ima_allbook"
@@ -42,7 +42,7 @@
         android:background="@drawable/button_shape_green"
         android:textColor="#ffffff"
         android:gravity="center_horizontal"
-        android:text="状态"
+        android:text="Status"
         android:textSize="10sp"
         app:layout_constraintTop_toBottomOf="@id/cs" />
 

@@ -61,8 +61,8 @@ public class RoomAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
             final Room room = mlist.get(position);
 
-            ((ViewHolder) holder).iv_roomID.setText("Room ID:" + room.getRoomID());
-            ((ViewHolder) holder).iv_hour.setText("Estimated occupancy time" + room.getHour());
+            ((ViewHolder) holder).iv_roomID.setText("Room:" + room.getRoomID());
+            ((ViewHolder) holder).iv_hour.setText("Duration:" + room.getHour());
             ((ViewHolder) holder).iv_time.setText(room.getTime());
             ((ViewHolder) holder).iv_week.setText(room.getWeek());
             ((ViewHolder) holder).iv_group.setText(room.getGroup());

@@ -81,20 +81,11 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
     private void initData(){
-        group.add("DB组");
-        group.add("微软组");
-        group.add("宣传组");
-        group.add("Geek组");
-        group.add("JavaEE组");
-        group.add("前端组");
-        group.add("Android组");
-        group.add("CPP组");
-        group.add("算法组");
-        group.add("iOS组");
-        group.add("产品组");
-        group.add("设计组");
-        group.add("企划组");
-        group.add("请选择你的组别");
+        group.add("Information Technology");
+        group.add("Artificial Intelligence");
+        group.add("Industry Design");
+        group.add("International Business");
+        group.add("Select Your Group");
     }
 
 }

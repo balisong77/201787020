@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:background="@drawable/bt_pass1"
-        android:text="申请借用会议室"
+        android:text="apply for room"
         android:textColor="#ffffff"
         android:textSize="18sp"
         android:textStyle="bold"

@@ -11,14 +11,14 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 public class RoomApply extends AppCompatActivity {
 
@@ -141,7 +141,7 @@ public class RoomApply extends AppCompatActivity {
             public void onClick(View v) {
 
                 if(str_roomID == null || str_group == null || str_hour == null || str_time == null || str_week == null){
-                    Toast.makeText(RoomApply.this,"请选择完整的信息", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RoomApply.this,"Select Full Info", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     if(judge()){
@@ -270,19 +270,19 @@ public class RoomApply extends AppCompatActivity {
 
     private void initData(){
 
-        roomID.add("9#411");
-        roomID.add("9#211");
-        roomID.add("9#508");
-        roomID.add("请选择会议室");
+        roomID.add("8106");
+        roomID.add("8108");
+        roomID.add("8314");
+        roomID.add("Select Room");
 
-        week.add("周一");
-        week.add("周二");
-        week.add("周三");
-        week.add("周四");
-        week.add("周五");
-        week.add("周六");
-        week.add("周日");
-        week.add("请选择占用时间（本周）");
+        week.add("Monday");
+        week.add("Tuesday");
+        week.add("Wednesday");
+        week.add("Thursday");
+        week.add("Friday");
+        week.add("Saturday");
+        week.add("Sunday");
+        week.add("Select Which Day");
 
         time.add("8:00");
         time.add("8:30");
@@ -311,28 +311,19 @@ public class RoomApply extends AppCompatActivity {
         time.add("20:00");
         time.add("20:30");
         time.add("21:00");
-        time.add("请选择开始时间");
+        time.add("Start Time");
 
         hour.add("0.5h");
         hour.add("1h");
         hour.add("1.5h");
         hour.add("2h");
-        hour.add("请选择持续时间");
+        hour.add("Duration");
 
-        group.add("DB组");
-        group.add("微软组");
-        group.add("宣传组");
-        group.add("Geek组");
-        group.add("JavaEE组");
-        group.add("前端组");
-        group.add("Android组");
-        group.add("CPP组");
-        group.add("算法组");
-        group.add("iOS组");
-        group.add("产品组");
-        group.add("设计组");
-        group.add("企划组");
-        group.add("请选择你的组别");
+        group.add("Information Technology");
+        group.add("Artificial Intelligence");
+        group.add("Industry Design");
+        group.add("International Business");
+        group.add("Select Your Group");
 
 
 
