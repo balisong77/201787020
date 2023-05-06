@@ -8,10 +8,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.litepal.crud.DataSupport;
-
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import org.litepal.crud.DataSupport;
 
 public class MyFragement extends Fragment {
     private int type;
@@ -30,41 +30,19 @@ public class MyFragement extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = null;
+        //左侧签到页
         if (type==1) {
             view = inflater.inflate(R.layout.frage_fistpage, container, false);
-            btn1 = view.findViewById(R.id.frag_about_us);
-            btn2 = view.findViewById(R.id.frag_introduce_group);
-            btn3 = view.findViewById(R.id.frag_dialog);
-            btn4 = view.findViewById(R.id.frag_come_in);
+            btn1 = view.findViewById(R.id.frag_qiandao);
             btn1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(getContext(), About_new_thread.class);
-                    startActivity(intent);
-                }
-            });
-            btn2.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(getContext(), Introduction.class);
-                    startActivity(intent);
-                }
-            });
-            btn3.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(getContext(), Get_in_dialog.class);
-                    startActivity(intent);
-                }
-            });
-            btn4.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(getContext(), Web_view.class);
+                    Intent intent = new Intent(getContext(),map.class);
                     startActivity(intent);
                 }
             });
         }
+        //个人信息页
         if (type==2){
             view = inflater.inflate(R.layout.frag_my_home, container, false);
             tx1 = view.findViewById(R.id.frag_home_shuji);
@@ -99,19 +77,12 @@ public class MyFragement extends Fragment {
                 }
             });
         }
+        // 加号首页
         if (type==3){
             view = inflater.inflate(R.layout.menu, container, false);
-            btn1 = view.findViewById(R.id.frag_qiandao);
             btn2 = view.findViewById(R.id.frag_book);
             btn3 = view.findViewById(R.id.frag_huiyi);
             btn4 = view.findViewById(R.id.frag_team);
-            btn1.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(getContext(),map.class);
-                    startActivity(intent);
-                }
-            });
             btn2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
