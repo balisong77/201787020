@@ -39,17 +39,19 @@ public class MyFragement extends Fragment {
         View view = null;
         //左侧签到页
         if (type==1) {
-            Intent intent = new Intent(getContext(), BarchartActivity.class);
-            startActivity(intent);
-//            view = inflater.inflate(R.layout.frage_fistpage, container, false);
-//            btn1 = view.findViewById(R.id.frag_qiandao);
-//            btn1.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
+//            Intent intent = new Intent(getContext(), BarchartActivity.class);
+//            startActivity(intent);
+            view = inflater.inflate(R.layout.frage_fistpage, container, false);
+//            view = inflater.inflate(R.layout.activity_drawer, container, false);
+            btn1 = view.findViewById(R.id.frag_qiandao);
+            btn1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(getContext(),DrawerActivity.class);
 //                    Intent intent = new Intent(getContext(),BarchartActivity.class);
-//                    startActivity(intent);
-//                }
-//            });
+                    startActivity(intent);
+                }
+            });
         }
         //个人信息页
         if (type==2){

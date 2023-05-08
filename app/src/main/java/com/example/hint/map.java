@@ -160,12 +160,12 @@ public class map extends AppCompatActivity {
             mbtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if(latitude>30.488669&&latitude<30.490487&&longitude>114.38947054&&longitude<114.39156146){
-                        Toast.makeText(com.example.hint.map.this,"签到成功",Toast.LENGTH_SHORT).show();
-                    }
-                    else {
-                        Toast.makeText(com.example.hint.map.this,"签到失败",Toast.LENGTH_SHORT).show();
-                    }
+//                    if(latitude>30.488669&&latitude<30.490487&&longitude>114.38947054&&longitude<114.39156146){
+                        Toast.makeText(com.example.hint.map.this,"check in success",Toast.LENGTH_SHORT).show();
+//                    }
+//                    else {
+//                        Toast.makeText(com.example.hint.map.this,"签到失败",Toast.LENGTH_SHORT).show();
+//                    }
                 }
             });
 
