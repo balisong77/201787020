@@ -29,7 +29,7 @@
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="XGCSYLLUSkaHcqH1WPWqlFkYACVYMI4B" />
+            android:value="5upe9GCkAiG8ezYXdZnZl8k9ZWoiIFRT" />
 
         <activity android:name=".Get_in_dialog" />
         <activity android:name=".Web_view" />
@@ -51,6 +51,7 @@
         <activity android:name=".MyTeam" />
         <activity android:name=".TeamOut" />
         <activity android:name=".TeamInfo" />
+        <activity android:name=".BarchartActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

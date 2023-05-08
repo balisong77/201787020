@@ -1,13 +1,13 @@
 package com.example.hint;
 
-public class Room {
+public class ClassRoom {
     private String roomID;
     private String week;
     private String time;
     private String group;
     private String hour;
 
-    public Room (){
+    public ClassRoom(){
 
     }
 

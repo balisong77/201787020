@@ -26,6 +26,7 @@ public class Book_detals extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_detals);
+//        BookDatabase.getInstance(this.getApplicationContext()).bookDao().updateBook();
         myhelper = new SQL_helper(this,"BOOKSTORE",null,1);
         myhelper.getWritableDatabase();
         final SQLiteDatabase db = myhelper.getWritableDatabase();
@@ -37,28 +38,28 @@ public class Book_detals extends AppCompatActivity {
         String type = intent.getStringExtra("type");;
         mtx.setText(data);
         ima.setImageResource(intent.getIntExtra("extra_num",1));
-        if (type.equals("借")) {
+        if (type.equals("borrow")) {
             mtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                   Intent intent2  = new Intent(Book_detals.this,Book_borrow.class);
-                   intent2.putExtra("name",data);
-                   startActivity(intent2);
-                   finish();
+                    Intent intent2  = new Intent(Book_detals.this,Book_borrow.class);
+                    intent2.putExtra("name",data);
+                    startActivity(intent2);
+                    finish();
 
 
                 }
             });
         }
         else {
-            mtn.setText("我要还书");
+            mtn.setText("return");
             mtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     ContentValues values = new ContentValues();
                     values.put("free", "Borrowable");
                     db.update("Book", values, "name = ?", new String[]{data});
-                    Toast.makeText(Book_detals.this,"归还成功！",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Book_detals.this,"success！",Toast.LENGTH_SHORT).show();
                     finish();
                 }
             });

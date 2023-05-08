@@ -56,9 +56,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         saved(i);
                         finish();
                         break;}
-                    else {
-                        Toast.makeText(this, "Login failed", Toast.LENGTH_SHORT).show();
-                    }
+//                    else {
+//                        Toast.makeText(this, "Login failed", Toast.LENGTH_SHORT).show();
+//                    }
                 }
                 break;
              default:break;

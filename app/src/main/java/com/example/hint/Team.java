@@ -2,11 +2,21 @@ package com.example.hint;
 
 import android.content.Context;
 
-public class Team {
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
+@Entity
+public class Team {
+    @PrimaryKey(autoGenerate = true)
+    private int id;
+    @ColumnInfo(name = "bossName")
     private String bossName;
+    @ColumnInfo(name = "teamName")
     private String teamName;
+    @ColumnInfo(name = "team_details")
     private String team_details;
+    @ColumnInfo(name = "members")
     private String members;
     private Context mContext;
 
@@ -52,5 +62,21 @@ public class Team {
 
     public void setMembers(String members) {
         this.members = members;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Context getmContext() {
+        return mContext;
+    }
+
+    public void setmContext(Context mContext) {
+        this.mContext = mContext;
     }
 }

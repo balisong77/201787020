@@ -3,6 +3,7 @@ package com.example.hint;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,10 +11,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.List;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.List;
 
 public class Adapter_wg extends RecyclerView.Adapter<Adapter_wg.GridViewHolder> {
     private Context mcontext;
@@ -38,7 +39,9 @@ public class Adapter_wg extends RecyclerView.Adapter<Adapter_wg.GridViewHolder> 
         viewHolder.imageView.setImageResource(book.getNum());
         if(book.getFree().equals("Borrowed"))
         {
-            viewHolder.textView2.setBackground(drawable);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                viewHolder.textView2.setBackground(drawable);
+            }
         }
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,11 +50,11 @@ public class Adapter_wg extends RecyclerView.Adapter<Adapter_wg.GridViewHolder> 
                     Intent intent = new Intent(mcontext, Book_detals.class);
                     intent.putExtra("extra_data", book.getName());
                     intent.putExtra("extra_num",book.getNum());
-                    intent.putExtra("type","借");
+                    intent.putExtra("type","borrow");
                     mcontext.startActivity(intent);
                 }
                 else {
-                    Toast.makeText(mcontext,"该书已被租借",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(mcontext,"This book has been borrowed",Toast.LENGTH_SHORT).show();
                 }
             }
         });

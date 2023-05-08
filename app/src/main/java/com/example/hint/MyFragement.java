@@ -11,7 +11,14 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.PieData;
+import com.github.mikephil.charting.data.PieDataSet;
+
 import org.litepal.crud.DataSupport;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MyFragement extends Fragment {
     private int type;
@@ -32,15 +39,17 @@ public class MyFragement extends Fragment {
         View view = null;
         //左侧签到页
         if (type==1) {
-            view = inflater.inflate(R.layout.frage_fistpage, container, false);
-            btn1 = view.findViewById(R.id.frag_qiandao);
-            btn1.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(getContext(),map.class);
-                    startActivity(intent);
-                }
-            });
+            Intent intent = new Intent(getContext(), BarchartActivity.class);
+            startActivity(intent);
+//            view = inflater.inflate(R.layout.frage_fistpage, container, false);
+//            btn1 = view.findViewById(R.id.frag_qiandao);
+//            btn1.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    Intent intent = new Intent(getContext(),BarchartActivity.class);
+//                    startActivity(intent);
+//                }
+//            });
         }
         //个人信息页
         if (type==2){

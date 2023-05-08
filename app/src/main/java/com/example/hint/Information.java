@@ -1,12 +1,25 @@
 package com.example.hint;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import org.litepal.crud.DataSupport;
 
+// 个人信息类
+@Entity
 public class Information extends DataSupport {
+    @PrimaryKey(autoGenerate = true)
+    private int id;
+    @ColumnInfo(name = "nickName")
     private String nickName;
+    @ColumnInfo(name = "realName")
     private String realName;
+    @ColumnInfo(name = "group")
     private String group;
+    @ColumnInfo(name = "idNumber")
     private String idNumber;
+    @ColumnInfo(name = "passWord")
     private String passWord;
 
     public String getRealName() {
@@ -51,5 +64,13 @@ public class Information extends DataSupport {
 
     public String getIdNumber() {
         return idNumber;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

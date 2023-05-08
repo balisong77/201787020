@@ -25,7 +25,7 @@ public class RoomInfo extends AppCompatActivity {
     private RecyclerView recyclerView_room;
 
     private MyDatabaseHelper dbHelper;
-    private List<Room> roomList = new ArrayList<>();
+    private List<ClassRoom> classRoomList = new ArrayList<>();
     private RoomAdapter adapter_room;
 
     Calendar getTimeNow = Calendar.getInstance();
@@ -137,13 +137,13 @@ public class RoomInfo extends AppCompatActivity {
                     }
                 }
 
-                Room room = new Room();
-                room.setRoomID(cursor.getString(cursor.getColumnIndex("roomID")));
-                room.setGroup(cursor.getString(cursor.getColumnIndex("group1")));
-                room.setWeek(cursor.getString(cursor.getColumnIndex("week")));
-                room.setTime(cursor.getString(cursor.getColumnIndex("time")));
-                room.setHour(cursor.getString(cursor.getColumnIndex("hour")));
-                roomList.add(room);
+                ClassRoom classRoom = new ClassRoom();
+                classRoom.setRoomID(cursor.getString(cursor.getColumnIndex("roomID")));
+                classRoom.setGroup(cursor.getString(cursor.getColumnIndex("group1")));
+                classRoom.setWeek(cursor.getString(cursor.getColumnIndex("week")));
+                classRoom.setTime(cursor.getString(cursor.getColumnIndex("time")));
+                classRoom.setHour(cursor.getString(cursor.getColumnIndex("hour")));
+                classRoomList.add(classRoom);
 
 
             }while(cursor.moveToNext());
@@ -151,8 +151,8 @@ public class RoomInfo extends AppCompatActivity {
 ////            LinearLayoutManager layoutManager = new LinearLayoutManager(this);
 ////            recyclerView.setLayoutManager(layoutManager);
 
-            adapter_room = new RoomAdapter(RoomInfo.this,roomList);
-            Log.d("TAG3"," " + roomList.size());
+            adapter_room = new RoomAdapter(RoomInfo.this, classRoomList);
+            Log.d("TAG3"," " + classRoomList.size());
             recyclerView_room.setAdapter(adapter_room);
 
             //teamList.clear();
@@ -165,7 +165,7 @@ public class RoomInfo extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        roomList.clear();
+        classRoomList.clear();
         InitData();
         //adapter.setData(teamList);
         //adapter.notifyDataSetChanged();

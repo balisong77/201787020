@@ -14,12 +14,12 @@ import java.util.List;
 
 public class RoomAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    private List<Room> mlist ;
+    private List<ClassRoom> mlist ;
     private Context mContext;
 
 
 
-    public RoomAdapter(Context context, List<Room> list){
+    public RoomAdapter(Context context, List<ClassRoom> list){
         mContext = context;
         mlist = list;
         Log.d("TAG4"," " + mlist.size());
@@ -59,15 +59,15 @@ public class RoomAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
 
 
-            final Room room = mlist.get(position);
+        final ClassRoom classRoom = mlist.get(position);
 
-            ((ViewHolder) holder).iv_roomID.setText("Room:" + room.getRoomID());
-            ((ViewHolder) holder).iv_hour.setText("Duration:" + room.getHour());
-            ((ViewHolder) holder).iv_time.setText(room.getTime());
-            ((ViewHolder) holder).iv_week.setText(room.getWeek());
-            ((ViewHolder) holder).iv_group.setText(room.getGroup());
+        ((ViewHolder) holder).iv_roomID.setText("Room:" + classRoom.getRoomID());
+        ((ViewHolder) holder).iv_hour.setText("Duration:" + classRoom.getHour());
+        ((ViewHolder) holder).iv_time.setText(classRoom.getTime());
+        ((ViewHolder) holder).iv_week.setText(classRoom.getWeek());
+        ((ViewHolder) holder).iv_group.setText(classRoom.getGroup());
 
-        }
+    }
 
 
 //        Log.d("TAG2","Book name " + team.getTeamName());
