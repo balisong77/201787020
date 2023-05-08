@@ -32,18 +32,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/frag_logo" />
 
-<!--    <Button-->
-<!--        android:id="@+id/frag_introduce_group"-->
-<!--        android:layout_width="300dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="40dp"-->
-<!--        android:background="@drawable/button_yellow"-->
-<!--        android:text="组别介绍"-->
-<!--        android:textColor="#FFFFFF"-->
-<!--        android:textSize="20dp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/frag_about_us" />-->
+    <Button
+        android:id="@+id/frag_weather"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_yellow"
+        android:text="weather"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_qiandao" />
 
 <!--    <Button-->
 <!--        android:id="@+id/frag_dialog"-->

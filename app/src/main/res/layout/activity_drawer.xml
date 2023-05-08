@@ -1,5 +1,6 @@
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/drawer_layout"
+    android:background="@drawable/bac"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -15,9 +16,9 @@
         android:layout_width="260dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="#FFFFFF"
+        android:background="#8A21C2F3"
         android:choiceMode="singleChoice"
-        android:divider="#FFFFFF"
+        android:divider="#9C27B0"
         android:dividerHeight="1dp" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

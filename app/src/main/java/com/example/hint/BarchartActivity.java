@@ -166,7 +166,7 @@ public class BarchartActivity extends Activity {
         ArrayList<BarEntry> values = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             float val = Float.parseFloat(hourlyList.get(i).getTemp());
-            values.add(new BarEntry(currHour+i+8, val));
+            values.add(new BarEntry(currHour+i+1, val));
         }
 
         BarDataSet set1;
@@ -208,7 +208,7 @@ public class BarchartActivity extends Activity {
 
             BarData data = new BarData(dataSets);
             data.setValueTextSize(10f);
-            data.setBarWidth(0.9f);
+            data.setBarWidth(1.0f);
 
             chart.setData(data);
         }

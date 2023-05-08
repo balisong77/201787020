@@ -275,13 +275,13 @@ public class RoomApply extends AppCompatActivity {
         roomID.add("8314");
         roomID.add("Select Room");
 
-        week.add("Monday");
-        week.add("Tuesday");
-        week.add("Wednesday");
-        week.add("Thursday");
-        week.add("Friday");
-        week.add("Saturday");
-        week.add("Sunday");
+        week.add("Mon");
+        week.add("Tue");
+        week.add("Wed");
+        week.add("Thu");
+        week.add("Fri");
+        week.add("Sat");
+        week.add("Sun");
         week.add("Select Which Day");
 
         time.add("8:00");

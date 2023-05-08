@@ -47,8 +47,16 @@ public class MyFragement extends Fragment {
             btn1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(getContext(),DrawerActivity.class);
+                    Intent intent = new Intent(getContext(),map.class);
 //                    Intent intent = new Intent(getContext(),BarchartActivity.class);
+                    startActivity(intent);
+                }
+            });
+            btn2 = view.findViewById(R.id.frag_weather);
+            btn2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(getContext(),DrawerActivity.class);
                     startActivity(intent);
                 }
             });
