@@ -163,10 +163,10 @@ public class RoomApply extends AppCompatActivity {
                         Log.d("COUNT","****" + str_week + str_roomID + str_time + str_hour + "*****");
                         db.insert("Room",null,values);
                         values.clear();
-                        Toast.makeText(RoomApply.this,"申请成功", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RoomApply.this,"apply success", Toast.LENGTH_SHORT).show();
                         finish();
                     }else {
-                        Toast.makeText(RoomApply.this,"该时段与其它组会议冲突！", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RoomApply.this,"conflict with others！", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
@@ -199,11 +199,9 @@ public class RoomApply extends AppCompatActivity {
                 if(str_roomID.equals(roomID) && str_week.equals(week)){
 
                     if (getTimeCompareSize(time,str_time) == HDQ && getTimeCompareSize(str_time,getTimeAdd(time,hour)) == HDQ){
-                        //Toast.makeText(RoomApply.this,"该时段与其它会议冲突！",Toast.LENGTH_SHORT).show();
                         return false;
 
                     }else if (getTimeCompareSize(str_time,time) == HDQ && getTimeCompareSize(time,getTimeAdd(str_time,str_hour)) == HDQ){
-                        //Toast.makeText(RoomApply.this,"该时段与其它会议冲突！",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 }

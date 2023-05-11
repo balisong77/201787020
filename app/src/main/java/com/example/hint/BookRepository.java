@@ -22,12 +22,12 @@ public class BookRepository {
     }
 
     public void insert(final Book book) {
-        dao.insert(book);
-//        BookDatabase.databaseWriteExecutor.execute(new Runnable() {
-//            @Override
-//            public void run() {
-//                dao.insert(book);
-//            }
-//        });
+//        dao.insert(book);
+        BookDatabase.databaseWriteExecutor.execute(new Runnable() {
+            @Override
+            public void run() {
+                dao.insert(book);
+            }
+        });
     }
 }

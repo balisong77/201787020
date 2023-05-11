@@ -33,14 +33,11 @@
 
         <activity android:name=".Get_in_dialog" />
         <activity android:name=".Web_view" />
-        <activity android:name=".About_new_thread" />
         <activity android:name=".Book_borrow" />
         <activity android:name=".Show_allbooks" />
         <activity android:name=".Book_detals" />
         <activity android:name=".Show_mybook" />
-        <activity android:name=".Introduction" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".System_Recruit" />
         <activity android:name=".RoomApply" />
         <activity android:name=".RoomInfo" />
         <activity android:name=".map" />

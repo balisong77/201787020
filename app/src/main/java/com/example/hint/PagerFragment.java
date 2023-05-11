@@ -45,11 +45,6 @@ public class PagerFragment extends Fragment {
         Cursor cursor = db.query("Team", null, null, null, null, null, null);
         if(cursor.moveToFirst()){
             do{
-                //遍历Cursor对象，取出数据
-                //"game_name text, "
-                //            + "team_boss text, "
-                //            + "memberNum text, "
-                //            + "details text)";
                 if(RealName.equals(cursor.getString(cursor.getColumnIndex("team_publisher")))){
                     Team team = new Team();
                     team.setTeamName(cursor.getString(cursor.getColumnIndex("game_name")));

@@ -31,9 +31,6 @@ public class DrawerActivity extends AppCompatActivity implements AdapterView.OnI
 
         menuLists = new ArrayList<Item>();
         menuLists.add(new Item(R.drawable.star,"weather"));
-//        menuLists.add(new Item(R.mipmap.iv_menu_alert,"提醒通知"));
-//        menuLists.add(new Item(R.mipmap.iv_menu_trace,"活动路线"));
-//        menuLists.add(new Item(R.mipmap.iv_menu_settings,"相关设置"));
         myAdapter = new MyAdapter<Item>(menuLists,R.layout.item_list) {
             @Override
             public void bindView(ViewHolder holder, Item obj) {
@@ -49,12 +46,7 @@ public class DrawerActivity extends AppCompatActivity implements AdapterView.OnI
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//        ContentFragment contentFragment = new ContentFragment();
-//        Bundle args = new Bundle();
-//        args.putString("text", menuLists.get(position).getIconName());
-//        contentFragment.setArguments(args);
-//        FragmentManager fm = getSupportFragmentManager();
-//        fm.beginTransaction().replace(R.id.ly_content,contentFragment).commit();
+
         drawer_layout.closeDrawer(list_left_drawer);
         Intent intent = new Intent(this.getApplicationContext(),BarchartActivity.class);
         startActivity(intent);

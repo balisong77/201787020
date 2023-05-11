@@ -33,7 +33,7 @@ public class Fragement_home extends AppCompatActivity {
         homeLinear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentTransaction fragmentTransaction = mfragmentManger.beginTransaction();//只能是局部变量，不能为全局变量，否则不能重复commi
+                FragmentTransaction fragmentTransaction = mfragmentManger.beginTransaction();
                 hideAllFragment(fragmentTransaction);
                 setAllFalse();
                 homeLinear.setSelected(true);
@@ -45,7 +45,7 @@ public class Fragement_home extends AppCompatActivity {
         listLinear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentTransaction fragmentTransaction = mfragmentManger.beginTransaction();//只能是局部变量，不能为全局变量，否则不能重复commi
+                FragmentTransaction fragmentTransaction = mfragmentManger.beginTransaction();
                 hideAllFragment(fragmentTransaction);
                 setAllFalse();
                 listLinear.setSelected(true);
@@ -57,7 +57,7 @@ public class Fragement_home extends AppCompatActivity {
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentTransaction fragmentTransaction = mfragmentManger.beginTransaction();//只能是局部变量，不能为全局变量，否则不能重复commi
+                FragmentTransaction fragmentTransaction = mfragmentManger.beginTransaction();
                 hideAllFragment(fragmentTransaction);
                 setAllFalse();
                 plus.setSelected(true);
