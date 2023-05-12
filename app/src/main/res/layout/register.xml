@@ -32,7 +32,7 @@
         android:layout_marginEnd="40sp"
         android:layout_marginRight="40sp"
         android:layout_marginBottom="-103dp"
-        android:hint="请输入昵称" />
+        android:hint="Enter your nickname" />
 
 
     <EditText
@@ -45,7 +45,7 @@
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="-64dp"
-        android:hint="请输入真实姓名" />
+        android:hint="Enter your real name" />
 
     <Spinner
         android:id="@+id/edit_3"
