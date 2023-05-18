@@ -111,7 +111,7 @@ public class map extends AppCompatActivity {
         mLocation.setLocOption(option);
     }
     @Override
-    protected  void  onResume() {
+    protected void onResume() {
 
         super.onResume();
         mapView.onResume();
@@ -160,12 +160,14 @@ public class map extends AppCompatActivity {
             mbtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-//                    if(latitude>30.488669&&latitude<30.490487&&longitude>114.38947054&&longitude<114.39156146){
+                    // 120.753574,31.274579 monash suzhou campus
+                    if(latitude>31.260000&&latitude<31.290000&&longitude>120.740000&&longitude<120.770000){
                         Toast.makeText(com.example.hint.map.this,"check in success",Toast.LENGTH_SHORT).show();
-//                    }
-//                    else {
-//                        Toast.makeText(com.example.hint.map.this,"签到失败",Toast.LENGTH_SHORT).show();
-//                    }
+                    }
+                    else {
+                        Toast.makeText(com.example.hint.map.this,"check in failed",Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(com.example.hint.map.this,"Current location: "+latitude+", "+longitude,Toast.LENGTH_SHORT).show();
+                    }
                 }
             });
 

@@ -8,9 +8,7 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
-/**
- * Created by Jay on 2015/10/8 0008.
- */
+
 public class ContentFragment extends Fragment {
 
     private TextView tv_content;

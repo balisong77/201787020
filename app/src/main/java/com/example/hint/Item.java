@@ -1,8 +1,5 @@
 package com.example.hint;
 
-/**
- * Created by Jay on 2015/10/8 0008.
- */
 public class Item {
 
     private int iconId;

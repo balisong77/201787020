@@ -11,9 +11,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by Jay on 2015/10/8 0008.
- */
 public abstract class MyAdapter<T> extends BaseAdapter {
 
     private ArrayList<T> mData;
